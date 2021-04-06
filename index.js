@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { render } from "react-dom";
 import './scss/style.scss';
 
+import { Header } from "./components/app-header/Header";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,13 +18,7 @@ function App() {
 
     return (
       <div className="wrapper">
-        <div className="header">
-          <div className="profile">
-          </div>
-          <div className="name">
-          </div>
-        </div>
-
+        <Header />
         <div className="main">
           <div className="center">
           </div>
