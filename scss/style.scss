@@ -17,19 +17,22 @@ body {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 125px 1fr 125px;
-  //grid-template-rows: 100px;
+  display: flex;
+}
+
+#h-center {
+  flex-grow: 1;
+  height: 198px;
+  background-color: #098;
+  border-top: 25px #098 solid;
 }
 
 .h-profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  //width: 100%;
-  //height: 100px;
-  background-color: pink;
+
 }
 
 #logo {
@@ -39,6 +42,8 @@ body {
 	border:1px solid #069;
 	border-color:#069 #098 #098 #069;
 	border-width:99px;
+  max-height: 1px;
+  max-width: 1px;
 }
 
 #nav {
@@ -48,6 +53,8 @@ body {
 	border:1px solid #069;
 	border-color:#098 #069 #069 #098;
 	border-width:99px;
+  max-height: 1px;
+  max-width: 1px;
 }
 
 .profile {
@@ -60,7 +67,7 @@ body {
 .name {
   font-size: 32px;
   color: white;
-  background-color: red;
+  background-color: pink;
 }
 
 .center {

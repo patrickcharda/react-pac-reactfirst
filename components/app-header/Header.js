@@ -8,7 +8,7 @@ export function Header() {
   return (
     <div className="header">
       <div id="logo"></div>
-      <div>
+      <div id="h-center">
         <div class="h-profile">
           <Profile />
           <Name />
