@@ -11,38 +11,31 @@ import {
   useParams
 } from "react-router-dom";
 
-import "./style";
-
-/*
-"Broken Routing" Solution
-
-OBJECTIVES:
-1) Bug: Multiple "pages" are showing up at the same time when we only expect one at a time. Fix this.
-
-Hints
-- <Switch> tag is missing
-- Wrap the <Route> tags in a <Switch> tag.
-
-2) Bug: Clicking through the link pages does not properly switch between the page components. Fix this.
-
-Hints
-- Try to determine what component is being rendered.
-- Try changing the order of routes
-- OR,  the "exact" attribute may be helpful here.
-
-3) Swap the order so the navigation bar is below the page content.
-
-4) Modify the app so '/contact' shows "Contact Page" and "/contact/us" shows "Contact Page for US".
-
-Hints
-- Add a <Link> tag for "/contact/us"
-- You can try adding another route for "/contact/:country"
-- Route order matters
-- Instead of adding another route, you could specify an optional url paramter with a ? suffix for instance: ":name?"
-
-*/
 
 function App() {
+
+    return (
+      <div className="wrapper">
+        <div className="header">
+          <div className="profile">
+          </div>
+          <div className="name">
+          </div>
+        </div>
+
+        <div className="main">
+          <div className="center">
+          </div>
+        </div>
+        
+        <div className="toolbar">
+        </div>
+      </div>
+    );  
+}
+render(<App />, document.getElementById("root"));
+
+/*
   return (
     <Router>
       <Switch>
@@ -59,6 +52,7 @@ function App() {
     </Router>
   );
 }
+
 
 function Nav() {
   return (
@@ -91,5 +85,6 @@ function NotFound() {
 }
 
 render(<App />, document.getElementById("root"));
+*/
 
 

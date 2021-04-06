@@ -4,3 +4,43 @@ body {
 #root {
   color: red;
 }
+
+.toolbar {
+  width: 75px;
+  color: white;
+  text-align: center;
+  background: gray;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.name {
+  font-size: 32px;
+  color: white;
+  background-color: red;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: salmon;
+}
+
