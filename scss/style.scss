@@ -1,3 +1,5 @@
+
+@import './variables';
 * {
 	box-sizing: border-box;
 }
@@ -22,9 +24,9 @@ body {
 
 #h-center {
   flex-grow: 1;
-  height: 198px;
-  background-color: #098;
-  border-top: 25px #098 solid;
+  height: 98px;
+  background-color: $color-primary;
+  border-top: 15px $color-primary solid;
 }
 
 .h-profile {
@@ -36,38 +38,45 @@ body {
 }
 
 #logo {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+#h-left {
+  position: relative;
   width:1px;
 	height:1px;
-  background-color: #069;
-	border:1px solid #069;
-	border-color:#069 #098 #098 #069;
-	border-width:99px;
+  background-color:$color-secondary;
+	border:1px solid $color-secondary;
+	border-color:$color-secondary $color-primary $color-primary $color-secondary;
+	border-width:49px;
   max-height: 1px;
   max-width: 1px;
 }
 
-#nav {
+#h-right {
   width:1px;
 	height:1px;
-  background-color: #069;
-	border:1px solid #069;
-	border-color:#098 #069 #069 #098;
-	border-width:99px;
+  background-color: $color-secondary;
+	border:1px solid $color-secondary;
+	border-color:$color-primary $color-secondary $color-secondary $color-primary;
+	border-width:49px;
   max-height: 1px;
   max-width: 1px;
 }
 
 .profile {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   background-color: red;
 }
 
 .name {
-  font-size: 32px;
+  font-size: 22px;
   color: white;
-  background-color: pink;
+  background-color: $color-primary;
 }
 
 .center {

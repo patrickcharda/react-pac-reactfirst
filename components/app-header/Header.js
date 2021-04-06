@@ -7,14 +7,16 @@ import { Name } from "./Name";
 export function Header() {
   return (
     <div className="header">
-      <div id="logo"></div>
+      <div id="h-left">
+        <div id="logo">LOGO</div>
+      </div>
       <div id="h-center">
         <div class="h-profile">
           <Profile />
           <Name />
         </div>
       </div>
-      <div id="nav"></div>
+      <div id="h-right"></div>
     </div>
   )
 }
