@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -13,13 +17,37 @@ body {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
+  //grid-template-rows: 100px;
+}
+
+.h-profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100px;
+  //width: 100%;
+  //height: 100px;
   background-color: pink;
+}
+
+#logo {
+  width:1px;
+	height:1px;
+  background-color: #069;
+	border:1px solid #069;
+	border-color:#069 #098 #098 #069;
+	border-width:99px;
+}
+
+#nav {
+  width:1px;
+	height:1px;
+  background-color: #069;
+	border:1px solid #069;
+	border-color:#098 #069 #069 #098;
+	border-width:99px;
 }
 
 .profile {

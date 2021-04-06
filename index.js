@@ -23,7 +23,6 @@ function App() {
           <div className="center">
           </div>
         </div>
-        
         <div className="toolbar">
         </div>
       </div>
