@@ -3,10 +3,18 @@
 }
 
 #h-center {
+  position: relative;
   flex-grow: 1;
   height: 98px;
   background-color: $color-primary;
-  border-top: 15px $color-primary solid;
+  border-top: 35px $color-primary solid;
+}
+
+.landing {
+  position: absolute;
+  top: -30px;
+  color: white;
+  right: -70px;;
 }
 
 .h-profile {
