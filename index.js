@@ -4,6 +4,7 @@ import './scss/style.scss';
 
 import { Header } from "./components/app-header/Header";
 import { Footer } from "./components/app-footer/Footer";
+import { SignForm } from "./components/app-main/SignForm";
 
 import {
   BrowserRouter as Router,
@@ -24,6 +25,18 @@ function App() {
 
         <main className="main">
           <section className="content">
+
+            <Router>
+              <Switch>
+                <Route path="/" exact component={SignForm} />
+                //<Route path="/about/:color" component={About} />
+                //<Route path="/contact/:country?" component={Contact} />
+        // or, in this order :
+        //<Route path="/contact" component={Contact} />
+        //<Route path="/contact/:country" component={Contact} />
+                //<Route path="*" component={NotFound} />
+              </Switch>
+            </Router>
           
           </section>
           <div className="toolbar">
