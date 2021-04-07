@@ -13,7 +13,7 @@
 .landing {
   position: absolute;
   top: -30px;
-  color: white;
+  color: $color-tertiary;
   right: -70px;;
 }
 
@@ -64,14 +64,14 @@
 
 .name {
   font-size: 20px;
-  color: white;
+  color: $color-tertiary;
   background-color: $color-primary;
 }
 
 .user {
   position: absolute;
   left: 3px;
-  color: white;
+  color: $color-tertiary;
   top: 3px;
   font-size: 24px;
 }
@@ -80,7 +80,7 @@
   visibility: hidden;
   position: absolute;
   left: 11px;
-  color: white;
+  color: $color-tertiary;
   top: 25px;
   font-size: 10px;
 }

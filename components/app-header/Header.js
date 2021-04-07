@@ -2,7 +2,7 @@ import React from "react";
 
 import { Profile } from "./Profile";
 import { Name } from "./Name";
-import { LandingMenu } from "./LandingMenu";
+
 
 
 export function Header() {
@@ -12,7 +12,6 @@ export function Header() {
         <div id="logo"></div>
       </div>
       <div id="h-center">
-        <LandingMenu />
         <div className="h-profile">
           <Profile />
           <Name />

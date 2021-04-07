@@ -5,6 +5,7 @@ import './scss/style.scss';
 import { Header } from "./components/app-header/Header";
 import { Footer } from "./components/app-footer/Footer";
 import { SignForm } from "./components/app-main/SignForm";
+import { LandingMenu } from "./components/app-main/LandingMenu";
 
 import {
   BrowserRouter as Router,
@@ -14,6 +15,8 @@ import {
   useLocation,
   useParams
 } from "react-router-dom";
+
+
 
 
 function App() {
@@ -27,17 +30,14 @@ function App() {
           <section className="content">
 
             <Router>
-              <Switch>
-                <Route path="/" exact component={SignForm} />
-                //<Route path="/about/:color" component={About} />
-                //<Route path="/contact/:country?" component={Contact} />
-        // or, in this order :
-        //<Route path="/contact" component={Contact} />
-        //<Route path="/contact/:country" component={Contact} />
-                //<Route path="*" component={NotFound} />
-              </Switch>
-            </Router>
           
+              <Switch>
+                <Route path="/test" exact component={ SignForm } />
+              </Switch>
+
+              <LandingMenu />
+            </Router>
+
           </section>
           <div className="toolbar">
           

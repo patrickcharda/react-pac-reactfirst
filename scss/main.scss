@@ -9,7 +9,17 @@
 .toolbar {
   min-height: calc(100vh - 196px);
   width: 98px;
-  color: white;
+  color: $color-tertiary;
   text-align: center;
   background: $color-secondary;
+}
+
+.landing {
+  position: absolute;
+  color: $color-tertiary;
+  top: 5px;
+  right: 25px;
+  & a {
+    color: $color-tertiary;
+  }
 }

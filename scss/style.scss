@@ -11,6 +11,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -18,7 +19,7 @@ body {
 }
 
 #root {
-  color: red;
+  color: $color-tertiary;
 }
 
 
