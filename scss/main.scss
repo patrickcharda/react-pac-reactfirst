@@ -1,0 +1,15 @@
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $color-primary;
+}
+
+.toolbar {
+  min-height: calc(100vh - 196px);
+  width: 98px;
+  color: white;
+  text-align: center;
+  background: $color-secondary;
+}

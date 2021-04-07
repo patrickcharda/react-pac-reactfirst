@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+}
+
+#f-center {
+  position: relative;
+  flex-grow: 1;
+  height: 98px;
+  background-color: $color-primary;
+  border-top: 15px $color-primary solid;
+}
+
+.f-profile {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+#f-left {
+  width:1px;
+	height:1px;
+  background-color:$color-secondary;
+	border: solid $color-secondary;
+	border-color: $color-primary $color-primary $color-secondary $color-secondary;
+	border-width:49px;
+  max-height: 1px;
+  max-width: 1px;
+}
+
+#f-right {
+  width:1px;
+	height:1px;
+  background-color: $color-secondary;
+	border: solid $color-secondary;
+	border-color:  $color-secondary $color-secondary $color-primary $color-primary;
+	border-width:49px;
+  max-height: 1px;
+  max-width: 1px;
+}
+
+
+.name {
+  font-size: 22px;
+  color: white;
+  background-color: $color-primary;
+}

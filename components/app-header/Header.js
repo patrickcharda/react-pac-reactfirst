@@ -6,17 +6,17 @@ import { Name } from "./Name";
 
 export function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <div id="h-left">
-        <div id="logo">LOGO</div>
+        <div id="logo"></div>
       </div>
       <div id="h-center">
-        <div class="h-profile">
+        <div className="h-profile">
           <Profile />
           <Name />
         </div>
       </div>
       <div id="h-right"></div>
-    </div>
+    </header>
   )
 }

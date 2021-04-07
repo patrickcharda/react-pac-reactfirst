@@ -1,5 +1,7 @@
-
 @import './variables';
+@import './header';
+@import './main';
+@import './footer';
 * {
 	box-sizing: border-box;
 }
@@ -7,84 +9,21 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+	min-height: 100vh;
+}
+
 #root {
   color: red;
 }
 
-.toolbar {
-  width: 75px;
-  color: white;
-  text-align: center;
-  background: gray;
-}
 
-.header {
-  display: flex;
-}
 
-#h-center {
-  flex-grow: 1;
-  height: 98px;
-  background-color: $color-primary;
-  border-top: 15px $color-primary solid;
-}
 
-.h-profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 
-}
 
-#logo {
-  position: absolute;
-  top: -40px;
-  left: -40px;
-}
-
-#h-left {
-  position: relative;
-  width:1px;
-	height:1px;
-  background-color:$color-secondary;
-	border:1px solid $color-secondary;
-	border-color:$color-secondary $color-primary $color-primary $color-secondary;
-	border-width:49px;
-  max-height: 1px;
-  max-width: 1px;
-}
-
-#h-right {
-  width:1px;
-	height:1px;
-  background-color: $color-secondary;
-	border:1px solid $color-secondary;
-	border-color:$color-primary $color-secondary $color-secondary $color-primary;
-	border-width:49px;
-  max-height: 1px;
-  max-width: 1px;
-}
-
-.profile {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: red;
-}
-
-.name {
-  font-size: 22px;
-  color: white;
-  background-color: $color-primary;
-}
-
-.center {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-  background-color: salmon;
-}
 

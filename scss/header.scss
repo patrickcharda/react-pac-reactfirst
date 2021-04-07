@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+}
+
+#h-center {
+  flex-grow: 1;
+  height: 98px;
+  background-color: $color-primary;
+  border-top: 15px $color-primary solid;
+}
+
+.h-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#logo {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+#h-left {
+  position: relative;
+  width:1px;
+	height:1px;
+  background-color:$color-secondary;
+	border: solid $color-secondary;
+	border-color:$color-secondary $color-primary $color-primary $color-secondary;
+	border-width:49px;
+  max-height: 1px;
+  max-width: 1px;
+}
+
+#h-right {
+  width:1px;
+	height:1px;
+  background-color: $color-secondary;
+	border: solid $color-secondary;
+	border-color:$color-primary $color-secondary $color-secondary $color-primary;
+	border-width:49px;
+  max-height: 1px;
+  max-width: 1px;
+}
+
+.profile {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: $color-secondary;
+}
+
+.name {
+  font-size: 20px;
+  color: white;
+  background-color: $color-primary;
+}
+
+.user {
+  position: absolute;
+  left: 3px;
+  color: white;
+  top: 3px;
+  font-size: 24px;
+}
+
+.bars {
+  visibility: hidden;
+  position: absolute;
+  left: 11px;
+  color: white;
+  top: 25px;
+  font-size: 10px;
+}

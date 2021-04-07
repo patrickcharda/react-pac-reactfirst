@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import './scss/style.scss';
 
 import { Header } from "./components/app-header/Header";
+import { Footer } from "./components/app-footer/Footer";
 
 import {
   BrowserRouter as Router,
@@ -18,13 +19,19 @@ function App() {
 
     return (
       <div className="wrapper">
+
         <Header />
-        <div className="main">
-          <div className="center">
+
+        <main className="main">
+          <section className="content">
+          
+          </section>
+          <div className="toolbar">
+          
           </div>
-        </div>
-        <div className="toolbar">
-        </div>
+        </main>
+
+        <Footer />
       </div>
     );  
 }
